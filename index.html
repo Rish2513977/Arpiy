@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Arpit Yadav — Video Editor & Motion Designer</title>
+<meta name="description" content="Portfolio of Arpit Yadav — Video Editor specializing in YouTube long-form, product reels, brand commercials, and high-impact motion graphics.">
+<meta name="theme-color" content="#06070B">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ambient Dynamic Refraction Background Mesh -->
+<div class="ambient-mesh" aria-hidden="true">
+  <div class="mesh-orb mesh-orb-1"></div>
+  <div class="mesh-orb mesh-orb-2"></div>
+  <div class="mesh-orb mesh-orb-3"></div>
+  <div class="mesh-orb mesh-orb-4"></div>
+  <div class="mesh-noise"></div>
+  <div class="mesh-grid-lines"></div>
+</div>
+
+<!-- Interactive Cursor Refraction Light -->
+<div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+<!-- Floating Island Glass Navigation -->
+<header class="nav-wrapper" id="nav-wrapper">
+  <nav class="nav" id="main-nav" aria-label="Main Navigation">
+    <div class="wrap nav-container">
+      <a href="#" class="nav-brand" aria-label="Arpit Yadav Portfolio Home">
+        <span class="brand-badge">
+          <svg class="brand-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+          </svg>
+        </span>
+        <span class="brand-text"><span id="brand-name">Arpit</span> Yadav</span>
+      </a>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Glass Menu Dropdown -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-inner">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#work" class="mobile-link">Work</a>
+      <a href="#pricing" class="mobile-link">Pricing</a>
+      <a href="#contact" class="mobile-link mobile-cta">Start a project</a>
+      <div class="mobile-nav-footer">
+        <a href="admin.html" class="mobile-admin-link">Admin login &rarr;</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero wrap" id="hero">
+  <div class="hero-left">
+    <div class="timecode mono">
+      <span class="pulse-dot"></span>
+      <span class="timecode-text">00:00:00:00 — REEL START</span>
+      <span class="badge-status">AVAILABLE FOR PROJECTS</span>
+    </div>
+    <h1 id="hero-name" class="interactive-hero-name">Arpit <em>Yadav</em></h1>
+    <p class="hero-tagline" id="hero-tagline">Cuts that keep people watching.</p>
+    <p class="hero-bio-short mono" id="hero-bio-short"></p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary magnetic-btn">
+        <span>See the work</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </a>
+      <a href="#contact" class="btn btn-outline magnetic-btn">
+        <span>Start a project</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-stats" id="hero-stats"></div>
+  </div>
+  
+  <div class="hero-right">
+    <div class="hero-photo-container">
+      <div class="hero-image-card" id="hero-image-card" tabindex="0" role="region" aria-label="Editor Profile Card">
+        <div class="viewfinder-corner vf-tl"></div>
+        <div class="viewfinder-corner vf-tr"></div>
+        <div class="viewfinder-corner vf-bl"></div>
+        <div class="viewfinder-corner vf-br"></div>
+        <div class="card-rec-badge mono"><span class="rec-dot"></span>REC</div>
+        <div class="card-fps-badge mono">4K · 60 FPS</div>
+        <div class="card-img-wrap">
+          <img id="hero-photo" src="images/arpit.jpg" alt="Arpit Yadav" width="350" height="466">
+          <div class="card-gradient-overlay"></div>
+        </div>
+        <div class="card-glare" id="card-glare"></div>
+        <div class="hero-frame-label mono" id="frame-label"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num mono">01 — ABOUT</div>
+        <h2>Behind the timeline</h2>
+        <p class="section-sub">Transforming raw rushes into captivating visual stories that retain attention and build brands.</p>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-card-header">
+          <div class="about-dot-group">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="about-card-badge mono">TIMELINE MASTER</span>
+        </div>
+        <p class="about-bio-text" id="about-bio"></p>
+      </div>
+      <div class="software-card">
+        <div class="software-card-title">
+          <span class="mono title-tag">TOOLSET</span>
+          <h3>Software Stack</h3>
+        </div>
+        <ul class="software-list" id="software-list"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Work Section -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num mono">02 — WORK</div>
+        <h2>Selected edits</h2>
+        <p class="section-sub">A curated mix of short-form reels, YouTube narratives, commercial spots and motion graphics — click any cut to watch.</p>
+      </div>
+    </div>
+    <div class="filters-wrapper">
+      <div class="filters" id="filters" role="tablist" aria-label="Category filters"></div>
+    </div>
+    <div class="video-grid" id="video-grid"></div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num mono">03 — PRICING</div>
+        <h2>Transparent Rates</h2>
+        <p class="section-sub">Straightforward pricing per video, or a monthly retainer if you need edits regularly. All prices in INR.</p>
+      </div>
+    </div>
+    <div class="pricing-grid" id="pricing-grid"></div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-num mono">04 — CONTACT</div>
+        <h2>Start a project</h2>
+        <p class="section-sub">Tell me about your footage, deadlines, and vision — I'll reply with a tailored quote and timeline.</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-header">
+          <span class="mono title-tag">DIRECT CHANNELS</span>
+          <h3>Get in Touch</h3>
+          <p class="contact-sub">Available for freelance commissions, retainer edits, and studio collaborations worldwide.</p>
+        </div>
+        <ul class="contact-info-list" id="contact-info-list"></ul>
+        <div class="social-block">
+          <span class="mono social-label">SOCIAL PROFILES</span>
+          <div class="social-row" id="social-row"></div>
+        </div>
+      </div>
+      
+      <div class="contact-card form-card">
+        <div class="form-card-header">
+          <span class="mono title-tag">SEND MESSAGE</span>
+          <h3>Project Details</h3>
+        </div>
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="cf-name">Your Name</label>
+            <input type="text" id="cf-name" placeholder="Arpit or Brand name" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="cf-email">Your Email</label>
+            <input type="email" id="cf-email" placeholder="your@company.com" required autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="cf-message">What do you need edited?</label>
+            <textarea id="cf-message" placeholder="Brief project summary, format (Reels/YouTube/Commercial), footage length, deadline..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit-btn">
+            <span>Send message</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+          <p class="form-note" id="form-note">This opens your email app with the message pre-filled — no account needed.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap footer-container">
+    <div class="footer-left">
+      <span class="footer-brand">&copy; <span id="year"></span> Arpit Yadav.</span>
+      <span class="footer-tagline">Crafted with Apple-inspired Liquid Glass UI.</span>
+    </div>
+    <div class="footer-right">
+      <a href="#hero" class="footer-back-top">Back to top &uarr;</a>
+      <a href="admin.html" class="footer-admin-link">
+        <span>Admin login</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+          <polyline points="10 17 15 12 10 7"></polyline>
+          <line x1="15" y1="12" x2="3" y2="12"></line>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Video Playback Modal (VisionOS Floating Glass Panel) -->
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <div class="modal-header-bar">
+      <div class="modal-dots">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+      </div>
+      <div class="modal-bar-title mono">VISION PLAYER · 4K PREVIEW</div>
+      <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-video" id="modal-video-body"></div>
+    <div class="modal-meta">
+      <div class="modal-meta-content">
+        <span class="video-cat-tag" id="modal-cat"></span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
